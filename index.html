@@ -8,42 +8,55 @@
     <title></title>
   </head>
   <body>
+    <div class="container">
 
-    <form class="movie-form">
-      <input type="text" placeholder="Title of Movie" name="title" id= "title" value="">
-      <input type="text" placeholder="Year of Release" name="year" id="year" value="">
-      <input type="number" placeholder="Tomatometer Score" name="score" id="score" value="">
-      <button type="submit" name="button">ADD</button>
-    </form>
+      <div class="header">
+        <h1>Les Raisins</h1>
+        <!-- <h2>Presenting the fine and absurd</h2> -->
+        <ul class="navbar">
+          <li>Movies & DVDs</li>
+          <li>News</li>
+          <li>Reviews</li>
+        </ul>
+      </div>
 
-    <table>
-      <thead>
-        <th>Title</th>
-        <th>Release Date</th>
-        <th>Rotten Tomato Score</th>
-      </thead>
-      <tbody class="tbody">
-        <!-- <tr>
-          <td>Red</td>
-          <td>2010</td>
-          <td>34</td>
-        </tr>
-        <tr>
-          <td>Red</td>
-          <td>2010</td>
-          <td>34</td>
-        </tr>
-        <tr>
-          <td>Red</td>
-          <td>2010</td>
-          <td>34</td>
-        </tr> -->
-      </tbody>
-    </table>
+      <form class="movie-form">
+        <label for="form">Add A Movie</label>
+        <input type="text" placeholder="Title of Movie" name="title" id= "title" value="">
+        <input type="text" placeholder="Year of Release" name="year" id="year" value="">
+        <input type="number" placeholder="Squished Score" name="score" id="score" value="">
+        <button type="submit" name="button">ADD</button>
+      </form>
 
-    <button type="click" name="button" id="sort">SORT</button>
+      <table class="table">
+        <thead>
+          <th>Title</th>
+          <th>Release Date</th>
+          <th id="sort">Squished Grapes Score</th>
+        </thead>
+        <tbody class="tbody">
+          <!-- <tr>
+            <td>Red</td>
+            <td>2010</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td>Red</td>
+            <td>2010</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td>Red</td>
+            <td>2010</td>
+            <td>34</td>
+          </tr> -->
+        </tbody>
+      </table>
 
-    <!--css to make app/table look cool-->
+      <!-- <button type="click" name="button" id="sort">SORT</button> -->
 
+      <!--css to make app/table look cool-->
+
+    </div>
   </body>
 </html>

@@ -1,35 +1,138 @@
+/*COLOR SCHEME:
+PALE GOLD - #COB283
+SILK - #E4DACF
+PAPER - #F4F4F4
+CHARCOAL - #373737*/
+.table{
+  display: none;
+}
+@font-face {
+  font-family: love;
+  src: url(Love.ttf);
+}
+@font-face {
+  font-family: caviar;
+  src: url(CaviarDreams.ttf);
+}
+
 body {
-  font-family: monospace;
+  margin: 15px;
+  font-family: caviar;
+  background-image: url("../img/spiration-light.png");
+}
+.container{
+  margin-left: 10%;
+}
+
+button {
+  font-size: 1em;
+  border-radius: 5px;
 }
 
 button, input {
-  font-family: monospace;
+  font-family: caviar;
+}
+
+.movie-form{
+  width: 60%;
+  margin-left: 14%;
+  margin-right: 50%;
+  margin-bottom: 5px;
+}
+
+h1 {
+  float: left;
+  font-family: love;
+  color: #E4DACF;
+  font-weight: normal;
+  font-size: 5em;
+  padding: 0;
+  margin-top: 2%;
+}
+
+h2 {
+  font-family: love;
+  font-weight: lighter;
+  color: #E4DACF;
+  font-size: 2em;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 5%;
+  width: 20%;
+  height: 20%
+}
+
+input {
+  font-size: 1.2em;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /*border: 2px solid #605856;*/
+  border-radius: 10px;
+  background: none;
+}
+
+li:hover {
+  background-color: white;
+  cursor: crosshair;
 }
 
 table {
   border-collapse: collapse;
-  margin: 25px;
-  
+  margin: 16px;
+  width: 80%;
   box-shadow: 5px 6px 21px -1px rgba(96,88,86,1);
 
 }
 td {
-  border-bottom: 1px solid black;
+  /*border-bottom: 1px solid black;*/
   padding: 15px;
   text-align: center;
 }
-
+/*SILK - #E4DACF
+PAPER - #F4F4F4
+CHARCOAL - #373737*/
 th {
-  background-color: #08415C;
+  background-color: #373737;
   font-size: 1.2em;
   color: #FFFFFA;
   padding-left: 5px;
   padding-right: 5px;
+  padding: 5px;
+  font-weight: normal;
 }
 
 tr:nth-child(even) {
-  background-color: #FFFFFA;
+  background-color: #F4F4F4;
 }
 tr:nth-child(odd) {
-  background-color: #ADFCF9;
+  background-color: #C0B283;
+}
+
+ul {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.header {
+  position: relative;
+  background: #C0B283;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: inline-block;
+  width: 80%;
+  /*height: 8%;*/
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.navbar {
+  float: right;
+  /*margin-top: 10%;*/
 }

@@ -5,10 +5,7 @@ function Movie(title, year, score) {
   this.year = year;
   this.score = score;
 }
-var sort = movies.sort(function(a,b) {
-  return a.score - b.score;
 
-});
 
 $(document).ready(function() {
   $(".movie-form").submit(function() {
@@ -17,6 +14,7 @@ $(document).ready(function() {
     var year = $("#year").val();
     var score = parseInt($("#score").val());
     var newMovie = new Movie(title, year, score);
+
     movies.push(newMovie);
     console.log(movies);
     $(".tbody").append(
@@ -25,7 +23,7 @@ $(document).ready(function() {
       <td>`+ newMovie.year +`</td>
       <td>`+ newMovie.score +`</td>
       </tr>`);
-
+      $(".table").show();
   });
   $("#sort").click(function(){
     movies.sort(function(a, b) {
