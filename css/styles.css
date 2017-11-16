@@ -9,18 +9,27 @@ button, input {
 table {
   border-collapse: collapse;
   margin: 25px;
-}
+  
+  box-shadow: 5px 6px 21px -1px rgba(96,88,86,1);
 
+}
 td {
   border-bottom: 1px solid black;
   padding: 15px;
+  text-align: center;
 }
 
 th {
-  background-color: gray;
+  background-color: #08415C;
   font-size: 1.2em;
+  color: #FFFFFA;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 tr:nth-child(even) {
-  background-color: beige;
+  background-color: #FFFFFA;
+}
+tr:nth-child(odd) {
+  background-color: #ADFCF9;
 }

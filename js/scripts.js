@@ -5,6 +5,10 @@ function Movie(title, year, score) {
   this.year = year;
   this.score = score;
 }
+var sort = movies.sort(function(a,b) {
+  return a.score - b.score;
+
+});
 
 $(document).ready(function() {
   $(".movie-form").submit(function() {
@@ -15,13 +19,27 @@ $(document).ready(function() {
     var newMovie = new Movie(title, year, score);
     movies.push(newMovie);
     console.log(movies);
-
     $(".tbody").append(
       `<tr>
       <td>` + newMovie.title + `</td>
       <td>`+ newMovie.year +`</td>
       <td>`+ newMovie.score +`</td>
       </tr>`);
-  });
 
+  });
+  $("#sort").click(function(){
+    movies.sort(function(a, b) {
+      return b.score - a.score;
+    });
+    console.log(movies);
+    $(".tbody").empty();
+    movies.forEach(function(movie) {
+      $(".tbody").append(
+        `<tr>
+        <td>` + movie.title + `</td>
+        <td>`+ movie.year +`</td>
+        <td>`+ movie.score +`</td>
+        </tr>`);
+      });
+    });
 });
