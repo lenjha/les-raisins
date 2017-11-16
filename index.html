@@ -12,7 +12,7 @@
     <form class="movie-form">
       <input type="text" placeholder="Title of Movie" name="title" id= "title" value="">
       <input type="text" placeholder="Year of Release" name="year" id="year" value="">
-      <input type="text" placeholder="Tomatometer Score" name="score" id="score" value="">
+      <input type="number" placeholder="Tomatometer Score" name="score" id="score" value="">
       <button type="submit" name="button">ADD</button>
     </form>
 
@@ -23,12 +23,26 @@
         <th>Rotten Tomato Score</th>
       </thead>
       <tbody class="tbody">
+        <tr>
+          <td>Red</td>
+          <td>2010</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>Red</td>
+          <td>2010</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>Red</td>
+          <td>2010</td>
+          <td>34</td>
+        </tr>
       </tbody>
     </table>
 
-    <!--add new movie to table-->
-    <!--td includes title, year, Tomatometer score-->
-    <!--populate table, then add button sorting each row based on score-->
+    <button type="click" name="button" id="sort">SORT</button>
+
     <!--css to make app/table look cool-->
 
   </body>

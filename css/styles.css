@@ -1,0 +1,26 @@
+body {
+  font-family: monospace;
+}
+
+button, input {
+  font-family: monospace;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px;
+}
+
+td {
+  border-bottom: 1px solid black;
+  padding: 15px;
+}
+
+th {
+  background-color: gray;
+  font-size: 1.2em;
+}
+
+tr:nth-child(even) {
+  background-color: beige;
+}
